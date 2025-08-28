@@ -6,6 +6,8 @@
 - debug:
     var: semaphore_vars
 - debug:
+    msg: "{{ test_1|default('empty') }} {{ test_2|default('empty_2') }}"
+- debug:
     var: vars
 
 - name: Get application source code
