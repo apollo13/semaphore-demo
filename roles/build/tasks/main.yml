@@ -3,6 +3,8 @@
     path: /tmp/demo-app-src
     state: absent
 
+- debug:
+    var: semaphore_vars
 
 - name: Get application source code
   git:
